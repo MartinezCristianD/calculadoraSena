@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="inputTextSize">24sp</dimen>
+    <dimen name="resultViewSize">80sp</dimen>
+    <dimen name="operationBtnS">36sp</dimen>
+    <dimen name="btnDelete">26sp</dimen>
+
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="Welcome">Bienvenido</string>
+    <string name="inputOne"> Ingrese el primer valor </string>
+    <string name="inputTwo">Ingrese el segundo valor </string>
+    <string name="btnResult">Resultado</string>
+    <string name="btnAdd">+</string>
+    <string name="btnDif">-</string>
+    <string name="btnPro">*</string>
+    <string name="btnDiv">/</string>
+    <string name="btnDelete">Borrar</string>
+    <string name="creditos">.. Developed By Davick..</string>
+</resources>
