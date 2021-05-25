@@ -31,35 +31,28 @@ class MainActivity : AppCompatActivity() {
             num2 = 0.0
         }
         val btnAdd: Button = findViewById(R.id.btnAdd)
-        btnAdd.setOnClickListener {
-            validation()
-            resultView.text = (num1 + num2).toString()
-        }
+        btnAdd.setOnClickListener {if ( validation()) resultView.text = (num1 + num2).toString()}
+
         val btnDif: Button = findViewById(R.id.btnDif)
-        btnDif.setOnClickListener {
-            validation()
-            resultView.text = (num1 - num2).toString()
-        }
+        btnDif.setOnClickListener {if (validation()) resultView.text = (num1 - num2).toString()}
+
         val btnPro: Button = findViewById(R.id.btnPro)
-        btnPro.setOnClickListener {
-            validation()
-            resultView.text = (num1 * num2).toString()
-        }
+        btnPro.setOnClickListener {if (validation()) resultView.text = (num1 * num2).toString()}
+
         val btnDiv: Button = findViewById(R.id.btnDiv)
-        btnDiv.setOnClickListener {
-            validation()
-            num1.toInt()
-            num2.toInt()
+        btnDiv.setOnClickListener {if (validation()) num1.toInt(); num2.toInt()
             resultView.text = (num1 / num2).toString()
         }
     }
-    private fun validation() {
+        private fun validation():Boolean {
 
         if (!num1View.text.isNullOrEmpty() && !num2View.text.isNullOrEmpty()) {
-             num2 = num2View.text.toString().toDouble()
-             num1 = num1View.text.toString().toDouble()
+            num2 = num2View.text.toString().toDouble()
+            num1 = num1View.text.toString().toDouble()
+
         } else {
-            Toast.makeText(this, "ingrese los Valores", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "ingrese los Valores", Toast.LENGTH_SHORT).show()
         }
+        return true
     }
 }
